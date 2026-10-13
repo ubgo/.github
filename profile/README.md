@@ -3,14 +3,14 @@
 <p align="center"><img src="ubgo-icon-512.png" alt="ubgo logo: a bold lowercase u holding one amber block" width="72" height="72"></p>
 <h1 align="center">ubgo</h1>
 <p align="center"><strong>Focused Go libraries for production services.</strong></p>
-<p align="center">Open-source Go libraries, plus a few TypeScript ones, for errors, logging, caching, config, SQL, GraphQL, HTTP services, crypto and tooling.</p>
+<p align="center">Focused Go libraries, plus a few TypeScript ones, for errors, logging, caching, config, SQL, GraphQL, HTTP services, crypto and tooling.</p>
 <p align="center">
   <a href="https://ubgo.github.io"><img src="https://img.shields.io/badge/site-ubgo.github.io-0891B2" alt="Website: ubgo.github.io"></a>
   <img src="https://img.shields.io/badge/public%20libraries-45-0891B2" alt="45 public libraries">
   <img src="https://img.shields.io/badge/language-Go%20%C2%B7%20TypeScript-0891B2" alt="Languages: Go and TypeScript">
 </p>
 
-ubgo is a set of small open-source Go libraries (and a few TypeScript ones) for building backend services: structured errors and logging, caching with Redis, Postgres, Memcached and in-memory backends, typed configuration and .env files, SQL building, GraphQL and ent helpers, health checks, graceful shutdown and crypto. Each library does one job and has its own repository, so you import only what you need.
+ubgo is a set of small Go libraries (and a few TypeScript ones), with their source on GitHub, for building backend services: structured errors and logging, caching with Redis, Postgres, Memcached and in-memory backends, typed configuration and .env files, SQL building, GraphQL and ent helpers, health checks, graceful shutdown and crypto. Each library does one job and has its own repository, so you import only what you need.
 
 - [Libraries by area](#libraries-by-area)
 - [Principles](#principles)
@@ -111,5 +111,7 @@ A few use a sub-module or a different module path. Each repo's README, and its p
 **Do I need to install everything?** No. Every library is its own Go module (and some split further into sub-modules), so you add only the ones you use.
 
 **Where are the docs?** Each repository's README, plus its page on pkg.go.dev (or npm for the TypeScript ones). The [library index](https://ubgo.github.io/libraries/) links to both.
+
+**What license are they under?** Each repository has its own LICENSE file. Today: Apache-2.0 (24), MIT (3), PolyForm Perimeter 1.0.0 (9), no LICENSE file (9). Check the LICENSE file before you use a library.
 
 **Where do I report a bug?** Open an issue in that library's repository.
