@@ -3,11 +3,12 @@
 <p align="center"><img src="ubgo-icon-512.png" alt="ubgo logo: a bold lowercase u holding one amber block" width="72" height="72"></p>
 <h1 align="center">ubgo</h1>
 <p align="center"><strong>Batteries included for Go, one module at a time.</strong></p>
-<p align="center">Focused Go libraries, plus a few TypeScript ones, for errors, logging, caching, config, SQL, GraphQL, HTTP services, crypto and tooling.</p>
+<p align="center">Open-source Go libraries, plus a few TypeScript ones, for errors, logging, caching, config, SQL, GraphQL, HTTP services, crypto and tooling.</p>
 <p align="center">
   <a href="https://ubgo.github.io"><img src="https://img.shields.io/badge/site-ubgo.github.io-0891B2" alt="Website: ubgo.github.io"></a>
   <img src="https://img.shields.io/badge/public%20libraries-45-0891B2" alt="45 public libraries">
   <img src="https://img.shields.io/badge/language-Go%20%C2%B7%20TypeScript-0891B2" alt="Languages: Go and TypeScript">
+  <img src="https://img.shields.io/badge/license-Apache--2.0-0891B2" alt="License: Apache-2.0">
 </p>
 
 ubgo is an ecosystem for building Go apps, in the spirit of the components Laravel ships for caching, logging and configuration. Every piece is its own Go module, so a service imports only what it uses: structured errors and logging, caching with Redis, Postgres, Memcached and in-memory backends, typed configuration and .env files, SQL building, GraphQL and ent helpers, health checks, graceful shutdown and crypto. The main libraries share one shape, a small core with adapters outside it and a shared test suite, so learning one teaches you the next.
@@ -124,7 +125,7 @@ Most libraries install with:
 go get github.com/ubgo/<name>
 ```
 
-A few use a sub-module or a different module path. Each repo's README, and its page on [ubgo.github.io](https://ubgo.github.io/libraries/), gives the exact line.
+Some are split into sub-modules or ship a CLI to `go install`. Each repo's README, and its page on [ubgo.github.io](https://ubgo.github.io/libraries/), gives the exact line.
 
 ## FAQ
 
@@ -132,6 +133,6 @@ A few use a sub-module or a different module path. Each repo's README, and its p
 
 **Where are the docs?** Each repository's README, plus its page on pkg.go.dev (or npm for the TypeScript ones). The [library index](https://ubgo.github.io/libraries/) links to both.
 
-**What license are they under?** Each repository has its own LICENSE file. Today: Apache-2.0 (24), MIT (3), PolyForm Perimeter 1.0.0 (9), no LICENSE file (9). Check the LICENSE file before you use a library.
+**What license are they under?** Every library is open source under Apache-2.0. The LICENSE file in each repository is the source of truth.
 
 **Where do I report a bug?** Open an issue in that library's repository.
