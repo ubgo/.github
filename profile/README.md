@@ -130,6 +130,8 @@ Most libraries install with:
 go get github.com/ubgo/<name>
 ```
 
+[auth](https://github.com/ubgo/auth) is not tagged yet; install the newest commit with `go get github.com/ubgo/auth@latest`.
+
 Some are split into sub-modules or ship a CLI to `go install`. Each repo's README, and its page on [ubgo.github.io](https://ubgo.github.io/libraries/), gives the exact line.
 
 ## FAQ
