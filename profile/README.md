@@ -16,6 +16,7 @@ ubgo is an ecosystem for building Go apps, in the spirit of the components Larav
 
 - [Libraries by area](#libraries-by-area)
 - [Volt](#volt)
+- [Upcoming](#upcoming)
 - [Principles](#principles)
 - [Install](#install)
 - [FAQ](#faq)
@@ -95,8 +96,6 @@ ubgo is an ecosystem for building Go apps, in the spirit of the components Larav
 - [**lath**](https://github.com/ubgo/lath): A task runner where tasks are typed Go functions and a deploy runs the same on a laptop, over ssh and in CI. *(CLI)*
 - [**ubgo-skills**](https://github.com/ubgo/ubgo-skills): Reusable skill files that capture Go and frontend coding conventions.
 
-More libraries are on the way.
-
 ## Volt
 
 Volt is the layer on top of ubgo to build, release and ship Go CLIs and libraries: the `volt` tool (scaffold, CI gate, coverage, cross-platform builds, verified releases) plus importable kit modules for building the CLIs themselves.
@@ -112,7 +111,15 @@ brew install khanakia/tap/volt
 - [**volt-demo-clis**](https://github.com/ubgo/volt-demo-clis): Demo of a monorepo with two CLIs, nested libraries and an internal module, each released on its own tag stream.
 - [**volt-demo-lib**](https://github.com/ubgo/volt-demo-lib): Demo of a single-library repo, released with notes and a verified module proxy entry instead of binaries.
 
-App starters are coming.
+## Upcoming
+
+These exist but are not public yet, so they have no links. More libraries are on the way.
+
+- **workflow**: Embeddable Go library for cron schedules, delayed and background jobs with retries, and multi-step workflows behind one Client interface, with swappable drivers (in-memory, SQL and Hatchet).
+- **brick**: A component-based HTML render engine for Go built on html/template, with layouts, components, islands and server actions, and a 133-component UI kit.
+- **validator**: Struct-native Go validator with a serializable IR; one set of rules validates in Go, exports to JSON Schema, and runs as a Standard-Schema TypeScript validator.
+- **volt-api**: The batteries-included Go backend starter, with schema-first GraphQL (gqlgen), Ent ORM, NATS JetStream, type-safe PKL config, OpenTelemetry, CLI and cron.
+- **volt-web**: A production-ready TanStack Start boilerplate for SSR React apps, with a dashboard shell, tRPC and oRPC, typed GraphQL via gqlkit, Drizzle and PostgreSQL.
 
 ## Principles
 
