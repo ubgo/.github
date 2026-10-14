@@ -4,15 +4,15 @@
 <h1 align="center">ubgo</h1>
 <p align="center"><strong>Batteries included for Go, one module at a time.</strong></p>
 <p align="center"><em>Early alpha: ubgo is still being built and is not fully production-ready yet, so libraries and APIs may change.</em></p>
-<p align="center">Open-source Go libraries, plus a few TypeScript ones, for errors, logging, caching, config, SQL, GraphQL, HTTP services, crypto and tooling.</p>
+<p align="center">Open-source Go libraries, plus a few TypeScript ones, for authentication, errors, logging, caching, config, SQL, GraphQL, HTTP services, crypto and tooling.</p>
 <p align="center">
   <a href="https://ubgo.github.io"><img src="https://img.shields.io/badge/site-ubgo.github.io-0891B2" alt="Website: ubgo.github.io"></a>
-  <img src="https://img.shields.io/badge/public%20libraries-45-0891B2" alt="45 public libraries">
+  <img src="https://img.shields.io/badge/public%20libraries-46-0891B2" alt="46 public libraries">
   <img src="https://img.shields.io/badge/language-Go%20%C2%B7%20TypeScript-0891B2" alt="Languages: Go and TypeScript">
   <img src="https://img.shields.io/badge/license-Apache--2.0-0891B2" alt="License: Apache-2.0">
 </p>
 
-ubgo is an ecosystem for building Go apps, in the spirit of the components Laravel ships for caching, logging and configuration. Every piece is its own Go module, so a service imports only what it uses: structured errors and logging, caching with Redis, Postgres, Memcached and in-memory backends, typed configuration and .env files, SQL building, GraphQL and ent helpers, health checks, graceful shutdown and crypto. The main libraries share one shape, a small core with adapters outside it and a shared test suite, so learning one teaches you the next.
+ubgo is an ecosystem for building Go apps, in the spirit of the components Laravel ships for authentication, caching, logging and configuration. Every piece is its own Go module, so a service imports only what it uses: sign-in, sessions, two-factor, passkeys, OAuth and organizations, structured errors and logging, caching with Redis, Postgres, Memcached and in-memory backends, typed configuration and .env files, SQL building, GraphQL and ent helpers, health checks, graceful shutdown and crypto. The main libraries share one shape, a small core with adapters outside it and a shared test suite, so learning one teaches you the next.
 
 - [Libraries by area](#libraries-by-area)
 - [Volt](#volt)
@@ -21,6 +21,10 @@ ubgo is an ecosystem for building Go apps, in the spirit of the components Larav
 - [FAQ](#faq)
 
 ## Libraries by area
+
+### Auth and identity
+
+- [**auth**](https://github.com/ubgo/auth): Embeddable authentication with plugins for email, password, phone, OAuth, passkeys, 2FA, API keys, JWT and organizations, stored in your own Postgres, MySQL or SQLite.
 
 ### Errors and logging
 
@@ -115,7 +119,7 @@ App starters are coming.
 These hold for the libraries named under each point, as their own READMEs state. They are not a promise for every repo.
 
 - **Small cores.** The core module has no third-party dependencies, so importing it adds nothing to your go.sum. For example: [errx](https://github.com/ubgo/errx), [logger](https://github.com/ubgo/logger), [health](https://github.com/ubgo/health), [shutdown](https://github.com/ubgo/shutdown), [buildinfo](https://github.com/ubgo/buildinfo), [sqlb](https://github.com/ubgo/sqlb), [lock](https://github.com/ubgo/lock), [httpreq](https://github.com/ubgo/httpreq).
-- **Adapters live outside the core.** Integrations (frameworks, OpenTelemetry, drivers, secret stores) ship as separate modules, so you only download what you import. For example: [errx](https://github.com/ubgo/errx), [logger](https://github.com/ubgo/logger), [health](https://github.com/ubgo/health), [shutdown](https://github.com/ubgo/shutdown), [buildinfo](https://github.com/ubgo/buildinfo), [cfgkit](https://github.com/ubgo/cfgkit), [sqlb](https://github.com/ubgo/sqlb), [otelkit](https://github.com/ubgo/otelkit), [lock](https://github.com/ubgo/lock).
+- **Adapters live outside the core.** Integrations (frameworks, OpenTelemetry, drivers, secret stores) ship as separate modules, so you only download what you import. For example: [errx](https://github.com/ubgo/errx), [logger](https://github.com/ubgo/logger), [health](https://github.com/ubgo/health), [shutdown](https://github.com/ubgo/shutdown), [buildinfo](https://github.com/ubgo/buildinfo), [cfgkit](https://github.com/ubgo/cfgkit), [sqlb](https://github.com/ubgo/sqlb), [otelkit](https://github.com/ubgo/otelkit), [lock](https://github.com/ubgo/lock), [auth](https://github.com/ubgo/auth).
 - **Shared conformance suites.** A family's contract is a test suite that every backend runs, so backends behave the same. For example: [cache](https://github.com/ubgo/cache), [cache-obj](https://github.com/ubgo/cache-obj), [sqlb](https://github.com/ubgo/sqlb).
 
 ## Install
