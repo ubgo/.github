@@ -25,7 +25,7 @@ ubgo is an ecosystem for building Go apps, in the spirit of the components Larav
 
 ### Auth and identity
 
-- [**auth**](https://github.com/ubgo/auth): Embeddable authentication with plugins for email, password, phone, OAuth, passkeys, 2FA, API keys, JWT and organizations, stored in your own Postgres, MySQL or SQLite.
+- [**auth**](https://github.com/ubgo/auth): Embeddable authentication with plugins for email, password, phone, OAuth, passkeys, 2FA, API keys, JWT and organizations, stored in your own Postgres, MySQL or SQLite; it can also be the OpenID Connect login for your other apps.
 
 ### Errors and logging
 
