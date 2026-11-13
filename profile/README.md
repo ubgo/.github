@@ -7,7 +7,7 @@
 <p align="center">Open-source Go libraries, plus a few TypeScript ones, for authentication, errors, logging, caching, config, SQL, GraphQL, HTTP services, crypto and tooling.</p>
 <p align="center">
   <a href="https://ubgo.github.io"><img src="https://img.shields.io/badge/site-ubgo.github.io-0891B2" alt="Website: ubgo.github.io"></a>
-  <img src="https://img.shields.io/badge/public%20libraries-46-0891B2" alt="46 public libraries">
+  <img src="https://img.shields.io/badge/public%20libraries-47-0891B2" alt="47 public libraries">
   <img src="https://img.shields.io/badge/language-Go%20%C2%B7%20TypeScript-0891B2" alt="Languages: Go and TypeScript">
   <img src="https://img.shields.io/badge/license-Apache--2.0-0891B2" alt="License: Apache-2.0">
 </p>
@@ -50,6 +50,7 @@ ubgo is an ecosystem for building Go apps, in the spirit of the components Larav
 
 ### Config and env
 
+- [**appdir**](https://github.com/ubgo/appdir): Where a Go tool keeps its files, from the global and project homes to the prod/dev profile split, pointer keys and moving an old home, each path with the rule that picked it.
 - [**cfgkit**](https://github.com/ubgo/cfgkit): Typed config from env, .env, JSON, YAML, TOML, flags and secret stores into one validated struct.
 - [**dotenv**](https://github.com/ubgo/dotenv): .env parser and editor that keeps comments, order and quoting, plus the dotenvctl CLI.
 
